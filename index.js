@@ -15,7 +15,11 @@ app.use(bodyParser.json());
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
+<<<<<<< HEAD
    console.log('success');
+=======
+   console.log('koneksi berhasil ke mongodb');
+>>>>>>> b340a950f89134cd01c89bbd66dc52dbd69e474e
 });
 //for customer
 app.get('/', (req, res) => res.send('Hello World!'));
